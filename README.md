@@ -1,7 +1,6 @@
-# Chatroom-docker
 # Sala de chat usando node.js y MySQL preparada para uso inmediato mediante Docker Compose
 
-#Cómo usar (instrucciones para Ubuntu)
+Cómo usar (instrucciones para Ubuntu)
 
 1: Instala Docker Compose
 apt-get install docker-compose
