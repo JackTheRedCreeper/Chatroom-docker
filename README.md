@@ -12,7 +12,6 @@ apt-get install docker-compose
 (dentro del directorio en el que se encuentren los archivos, donde se encuentra el Dockerfile)
 
 chmod 777 sql
-
 chmod 777 sql/init.sql
 
 4: Monta la aplicación con Docker Compose
