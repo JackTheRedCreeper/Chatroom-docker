@@ -1,0 +1,59 @@
+* {
+	font-family: Arial;
+}
+body {
+	background-color: #333;
+}
+li {
+	list-style-type: none;
+}
+
+#captcha {
+	color: #eee;
+}
+#captcha * {
+	margin-left: 10px;
+}
+#captcha input {
+	margin-right: 10px;
+}
+
+#chattext {
+	display: flex;
+	flex-direction: column-reverse;
+	background-color: #eee;
+	margin-bottom: 10px;
+	height: 75%;
+	width: 100%;
+	overflow-y: scroll;
+}
+#messages {
+	padding-left: 20px;
+}
+.admin {
+	font-weight: bold;
+}
+
+#txt {
+	width: calc(100% - 85px);
+	text-overflow: ellipsis;
+}
+#txtbtt {
+	width: 75px;
+	position: absolute;
+	right: 8px;
+}
+
+#userslist {
+	background-color: #bbb;
+	height: 125px;
+	overflow-y: auto;
+}
+#userslist p {
+	margin: 0px;
+	padding: 5px 5px 0px 25px;
+}
+#users {
+	padding: 5px 5px 5px 10px;
+	margin: 0px;
+}

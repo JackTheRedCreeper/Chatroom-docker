@@ -1,0 +1,41 @@
+<html>
+<head>
+	<title>Chatroom</title>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.3.0/socket.io.js"></script>
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+	<!-- Captcha -->
+	<div id="captcha">
+		<form onsubmit="return sendCaptcha()">
+			<label>Name:</label><input id="namefl" maxlength="20" size="20"/>
+			<label id="qst"></label><input id="lbl" maxlength="4" autocomplete="off"/>
+			<input id="lblbtt" type="submit" value="Send captcha"/>
+		</form>
+	</div>
+
+
+	<div id="chattext">
+		<ul id="messages"></ul>
+	</div>
+	
+	<div id="chatinput">
+		<form onsubmit="return sendMessage()">
+			<input id="txt" type="text" autocomplete="off" maxlength="300" disabled/>
+			<input id="txtbtt" type="submit" value="Send" disabled/>
+		</form>
+	</div>
+
+	<div id="userslist">
+		<p>Connected users:</p>		
+		<ul id="users"></ul>
+	</div>
+	
+	<script src="/js/app.js"></script>
+</body>
+	
+
+</html>

@@ -1,0 +1,17 @@
+version: "3.7"
+services:
+  chat-app:
+    build: .
+    ports:
+      - 8080:8080
+  mysql3: 
+    image: mysql:5.7
+    environment:
+      MYSQL_ROOT_PASSWORD: 1234
+      MYSQL_DATABASE: db_node
+    volumes:
+      - chat-mysql2-data:/var/lib/mysql
+      - ./sql:/docker-entrypoint-initdb.d
+
+volumes:
+  chat-mysql2-data:
